@@ -20,7 +20,7 @@ use Joomla\CMS\Cache\Cache;
  *
  * @since  1.0
  */
-class PlgAJAXDDJUGbanner extends JPlugin
+class PlgAJAXDD_JUGbanner extends JPlugin
 {
 	/**
 	 * @var
