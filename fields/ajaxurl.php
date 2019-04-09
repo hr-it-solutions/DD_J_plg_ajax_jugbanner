@@ -43,13 +43,13 @@ class JFormFieldAJAXurl extends JFormFieldSpacer {
 		$URL = $this->componentURL . '&format=xml&plugin=BannerList&group=ajax';
 		$html = '<b>' . JText::_('PLG_AJAX_DD_JUGBANNER_XML_URL') . '</b><br><a title="' .
 			JText::_('PLG_AJAX_DD_JUGBANNER_BANNERLIST') . ' XML" href="' .
-			$URL . '" target="_blank">' .
+			JURI::root() . $URL . '" target="_blank">' .
 			$URL . '</a><br>';
 
 		$URL = $this->componentURL . '&format=raw&plugin=BannerHash&group=ajax';
 		$html .= '<br><b>' . JText::_('PLG_AJAX_DD_JUGBANNER_HASH_URL') . '</b><br><a title="' .
 			JText::_('PLG_AJAX_DD_JUGBANNER_BANNERHASH') . ' XML" href="' .
-			$URL . '" target="_blank">' .
+			JURI::root() . $URL . '" target="_blank">' .
 			$URL . '</a><br>';
 
 		$html .= '<br><b>' . JText::_('PLG_AJAX_DD_JUGBANNER_HASH') . '</b><br>';
