@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" group="ajax" version="3.6" method="upgrade">
+	<name>plg_ajax_dd_jugbanner</name>
+	<license>GNU/GPL 3</license>
+	<author>Florian Häusler</author>
+    <authorEmail>florian@hr-it-solutions.com</authorEmail>
+    <authorUrl>https://www.hr-it-solutions.com</authorUrl>
+    <creationDate>April 2019</creationDate>
+    <copyright>Copyright (C) 2019 HR-IT-Solutions GmbH</copyright>
+	<version>1.0</version>
+	<description>PLG_AJAX_DD_JUGBANNER_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="dd_jugbanner">dd_jugbanner.php</filename>
+		<folder>fields</folder>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_ajax_dd_jugbanner.sys.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_ajax_dd_jugbanner.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="catid"
+					   type="category"
+					   extension="com_banners"
+					   label="PLG_AJAX_DD_JUGBANNER_CATEGORY_DESC"
+					   multiple="true"
+					   description="" />
+
+				<fieldset addfieldpath="/plugins/ajax/dd_jugbanner/fields">
+					<field name="ajaxurl" type="ajaxurl" label="PLG_AJAX_DD_JUGBANNER_AJAXURL_LABEL"
+						   description="PLG_AJAX_DD_JUGBANNER_AJAXURL_DESC" />
+				</fieldset>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
